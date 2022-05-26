@@ -1,11 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap');
 
+@font-face {
+    font-family: 'ahsing-regular';
+    src:url('./assets/fonts/ahsing-regular/ahsing-regular.woff') format('woff'),
+        url('./assets/fonts/ahsing-regular/ahsing-regular.woff2') format('woff2'),
+        url('./assets/fonts/ahsing-regular/ahsing-regular.svg') format('svg'),
+        url('./assets/fonts/ahsing-regular/ahsing-regular.eot'),
+        url('./assets/fonts/ahsing-regular/ahsing-regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/ahsing-regular/ahsing-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ramen-sans-demibold';
+    src:url('./assets/fonts/ramen-sans-demibold/ramen-sans-demibold.woff') format('woff'),
+        url('./assets/fonts/ramen-sans-demibold/ramen-sans-demibold.woff2') format('woff2'),
+        url('./assets/fonts/ramen-sans-demibold/ramen-sans-demibold.svg') format('svg'),
+        url('./assets/fonts/ramen-sans-demibold/ramen-sans-demibold.eot'),
+        url('./assets/fonts/ramen-sans-demibold/ramen-sans-demibold.eot#iefix') format('embedded-opentype'),
+        url('./assets/fonts/ramen-sans-demibold/ramen-sans-demibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+body {
+    background-color: #F8ACB6;
+}
 
 #logo {
     justify-content: center;
@@ -23,6 +55,8 @@
     flex-direction: column;
     background-color: #F8ACB6;
     padding: 20px;
+    //z-index: -1;
+    position: relative;
 }
 
 .header p {
@@ -42,10 +76,216 @@
 
 .verticalLine {
     border-left: 1px solid #F2413C;
-    height: 200px;
+    height: 300px;
     align-self: center;
-    // position: relative;
-    // left: 50%;
-    // margin-left: -3px;
-    // top: 0;
+    z-index: 10;
   }
+
+  .verticalLine-1 {
+    border-left: 1px solid #F2413C;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    align-self: center;
+    top: -10%;
+    // z-index: 10;
+  }
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+  .hero_bg {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        z-index: -1;
+        padding: 50%;
+}
+
+.newsletter-header {
+    font-size: 2.5rem;
+    text-align: center;
+    // position: relative;
+    font-family: 'ahsing-regular';
+    color: white;
+}
+
+.newsletter-subheader {
+    font-family: 'Work Sans'; 
+    color: white;
+    font-size: .8rem;
+}
+
+@media only screen and (max-width: 400px) {
+    .hero_bg { 
+        // background-color: ;
+        width: 50%;
+        height: 50%;
+        background-position: top;
+    }
+    .newsletter-header {
+        font-size: 1.2rem;
+    }
+
+}
+
+.main {
+    background-color: white;
+    z-index: 10;
+    position: relative;
+    margin-top: 30%;
+}
+
+
+.main-header {
+    padding-top: 100px;
+    font-family: 'ahsing-regular';
+    font-size: 44px;
+    width: 500px;
+}
+
+.main-subheader {
+    font-size: 22px;
+    width: 500px;
+    font-family: 'ramen-sans-demibold';
+}
+
+.main-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.stiker1 {
+    align-self: flex-end;
+}
+
+#sticker1 {
+
+    width: 100px;
+
+}
+
+
+.main-menu {
+    padding-top: 150px;
+    font-family: 'ahsing-regular';
+    font-size: 44px;
+    width: 500px;
+    text-align: center;
+    color: #F8ACB6;
+}
+
+
+.verticalLine-inflex {
+    border-left: 1px solid #F2413C;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    align-self: center;
+    bottom: 20%;
+    // z-index: 10;
+}
+
+#drink1 {
+    position: relative;
+    bottom: 200px;
+    z-index: -2;
+    right: -40px;
+}
+
+
+#drink2 {
+    position: relative;
+    bottom: 200px;
+    z-index: -2;
+    right: -230px;
+}
+
+
+.whatson {
+    text-align: center; 
+    font-family: 'Work Sans'; 
+    font-weight: 600; 
+    color: #F2413C;
+    margin-top: 10px;
+}
+
+
+.middle {
+    background-color: white;
+}
+
+.middle-grid {
+    display: flex;
+    flex-direction: row;
+    font-family: 'ramen-sans-demibold';
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #FDDCEE;
+}
+
+.squre-01 {
+        text-align: center;
+        background-color: #FDDCEE;
+        flex-basis: 50%;
+        padding: 20%;
+
+}
+
+.squre-02 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+
+.squre-02-child {
+    width: 50%;
+    text-align: center;
+
+}
+
+.squre-02-child {
+    padding: 20% 10% 20% 10%;
+    text-align: center;
+}
+
+
+.middle-photo {
+    flex-basis: 50%;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+    padding: 10% 10% 10% 10%;
+}
+
+.middle-photo img{
+    margin: 0 auto;
+    position: block;
+}
+
+.middle-description {
+    flex-basis: 50%;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.middle-description p {
+    margin: 0 auto;
+    width: 300px;
+}
