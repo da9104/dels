@@ -294,11 +294,78 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-    margin-bottom: 400px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
     img {
         margin: 0 auto;
         width: 120px;
     }
+}
+
+.footer {
+    background-color: #393535;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+.footer-header {
+    margin: 80px auto 0px auto;
+    background-color: #F2413C;
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    border-radius: 0 0 45% 45%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.footer-header h2 {
+    font-family: 'ahsing-regular';
+    font-size: 33px;
+    color: white;
+    
+}
+
+.footer-header p {
+    font-family: 'Work Sans'; 
+    color: white;
+    font-size: .9rem;
+    margin: 40px auto 40px auto;
+}
+
+#lettering {
+    width: 100px;
+    position: relative;
+    right: 9rem;
+    top: -13rem;
+}
+
+.verticalLine-foter {
+    border-left: 1px solid #F2413C;
+    height: 200px;
+    align-self: center;
+    z-index: 10;
+}
+
+.fornow {
+    color: #FCC0D5;
+    font-family: 'ahsing-regular';
+    font-size: 33px;
+}
+
+.footer a {
+    color: #FCC0D5;
+    font-family: 'Work Sans';
+    font-size: 53px;
+}
+
+#footer-logo {
+    width: 200px;
+    margin: 70px auto 80px auto;
 }
