@@ -289,3 +289,16 @@ body {
     margin: 0 auto;
     width: 300px;
 }
+
+.middle-logo {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 400px;
+
+    img {
+        margin: 0 auto;
+        width: 120px;
+    }
+}
